@@ -1,0 +1,24 @@
+# delete_number.py
+
+def delete_number(numbers, num_to_delete):
+    """
+    This function deletes the given number from the list if it exists.
+    
+    :param numbers: List of numbers
+    :param num_to_delete: Number to be deleted
+    :return: List after deleting the number
+    """
+    if num_to_delete in numbers:
+        numbers.remove(num_to_delete)
+    return numbers
+
+# Example usage
+numbers = [10, 20, 30, 40, 50, 60]
+num_to_delete = 30
+
+# Delete the number from the list
+updated_numbers = delete_number(numbers, num_to_delete)
+
+# Print the result
+print("Original list:", numbers)
+print("Updated list after deleting", num_to_delete, ":", updated_numbers)
