@@ -1,0 +1,11 @@
+# reverse_array.py
+
+# Define an array with 6 numbers
+numbers = [10, 20, 30, 40, 50, 60]
+
+# Reverse the array
+reversed_numbers = numbers[::-1]
+
+# Print the reversed array
+print("Original array:", numbers)
+print("Reversed array:", reversed_numbers)
