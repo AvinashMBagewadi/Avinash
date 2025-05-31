@@ -1,0 +1,23 @@
+# improved_code.py
+
+def calculate_average(numbers):
+    """
+    Calculate the average of a list of numbers.
+
+    :param numbers: List of numeric values
+    :return: Average value or None if the list is empty
+    """
+    if not numbers:
+        return None  # Handle empty list case
+
+    total = sum(numbers)
+    return total / len(numbers)
+
+# Example usage
+numbers = [10, 20, 30, 40, 50]
+average = calculate_average(numbers)
+
+if average is not None:
+    print(f"The average of {numbers} is {average:.2f}")
+else:
+    print("The list is empty. Cannot calculate average.")
