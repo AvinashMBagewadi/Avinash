@@ -1,0 +1,13 @@
+# bad_code.py
+
+def avg(nums):  # Poor function name
+    total = 0
+    for i in range(len(nums)):  # Inefficient loop
+        total = total + nums[i]
+    return total / len(nums)  # No check for empty list
+
+# Example usage
+list = [10, 20, 30, 40, 50]  # Using 'list' as a variable name (bad practice)
+print("Average is", avg(list))  # No formatting, unclear output
+
+
